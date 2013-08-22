@@ -11,9 +11,14 @@ $(document).ready(function() {
 
         events: [
             {
-                title: 'My Event',
+                title: 'Событие переносит на гугл',
                 start: '2013-08-24',
                 url: 'http://google.com/'
+            },
+            {
+                title: 'Событие переносит на яндекс',
+                start: '2013-08-01',
+                url: 'http://ya.ru/'
             }
             // other events here
         ],
