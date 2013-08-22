@@ -8,9 +8,25 @@ $(document).ready(function() {
 
     $('#calendar').fullCalendar({
         // put your options and callbacks here
+
+        events: [
+            {
+                title: 'My Event',
+                start: '2013-08-24',
+                url: 'http://google.com/'
+            }
+            // other events here
+        ],
+        
+        eventClick: function(event) {
+            if (event.url) {
+                window.open(event.url);
+                return false;
+            }
+        },
         
         dayClick: function() {
             alert('a day has been clicked!');
         }
-    })
+    });
 });
