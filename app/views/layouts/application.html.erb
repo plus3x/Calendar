@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>CRM system</title>
+    <title>Test calendar interface</title>
     <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
     <%= csrf_meta_tags %>
@@ -12,10 +12,10 @@
       <%= @page_title || t('.title') %>
       <div id="login">
         <% if session[:user_id] %>
-          <% # "Hello #{User.find(session[:user_id]).email}" %>
-          <% #link_to t('logout'), logout_url, method: :delete %>
+          <% "Hello #{User.find(session[:user_id]).email}" %>
+          <% link_to t('logout'), logout_url, method: :delete %>
         <% else %>
-          <% #link_to t('login'), login_path %>
+          <% link_to t('login'), login_path %>
         <% end %>
       </div>
     </div>
