@@ -1,5 +1,7 @@
 TestForCalendar::Application.routes.draw do
 
+  resources :events
+
   root 'home#index', as: 'home'
   
   resources :users
