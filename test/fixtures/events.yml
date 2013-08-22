@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  \title: MyString
+  title: MyString
   name: MyString
-  start_time: 2013-08-22 17:44:12
+  start_time: 2013-08-22 18:15:14
 
 two:
-  \title: MyString
+  title: MyString
   name: MyString
-  start_time: 2013-08-22 17:44:12
+  start_time: 2013-08-22 18:15:14
